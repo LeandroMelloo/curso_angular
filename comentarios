@@ -1,7 +1,4 @@
-1° Passo configurar o projeto
-- file -> Project Structure -> instalar SDK
-
-2° Passo configurar o projeto no VSCode
+1° Passo configurar o projeto no VSCode
 - npm install -g @angular/cli
 - disponibiliza o comando ng
 - ng --version, para validar se o angular cli está instalado
