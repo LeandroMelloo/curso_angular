@@ -2,3 +2,20 @@
 - npm install -g @angular/cli
 - disponibiliza o comando ng
 - ng --version, para validar se o angular cli está instalado
+- ng help
+- ng generate --help
+- ng new my-first-project
+- cd my-first-project
+- ng serve ou ng server --o
+
+2° Configurando o Bootstrap
+- vá até o site oficial: https://getbootstrap.com/
+- clique em download
+- copie e cole no terminal: npm install bootstrap
+
+3° Criando componentes com o Angular
+- ng g c components/criar-produto (comonado para criar o componente criar produto)
+- ng g c components/listar-produto (comonado para criar o componente listar produto)
+
+4° Criando serviço com o Angular
+- ng g s services/produto (comonado para criar o serviço produto)

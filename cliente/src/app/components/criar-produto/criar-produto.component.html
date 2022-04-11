@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">Cadastrar Produto</span>
+                    <form class="mt-3" [formGroup]="produtoForm" (ngSubmit)="cadastrarProduto()">
+                        <div class="mb-3">
+                            <input type="text" formControlName="produto" class="form-control form-control-lg"
+                                placeholder="Digite seu Produto">
+                            <div class="text-danger" *ngIf="produtoForm.get('produto')?.hasError('required')">
+                                <span><strong>Campo Produto é obrigatório.</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="categoria" class="form-control form-control-lg"
+                                placeholder="Digite sua Categoria">
+                            <div class="text-danger">
+                                <span><strong>Campo Categoria é obrigatório.</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="localizacao" class="form-control form-control-lg"
+                                placeholder="Digite sua Localização">
+                            <div class="text-danger">
+                                <span><strong>Campo Localização é obrigatório.</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" formControlName="preco" class="form-control form-control-lg"
+                                placeholder="Digite seu Preço">
+                            <div class="text-danger">
+                                <span><strong>Campo Preço é obrigatório.</strong></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button routerLink="/" class="btn btn-secondary btn-lg float-start">Voltar</button>
+                            <button type="submit" class="btn btn-success btn-lg float-end">Aceitar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
