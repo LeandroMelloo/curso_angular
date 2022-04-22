@@ -1,2 +1,2 @@
-# curso_angular
-Curso de Angular
+# formacao_angular_alura
+Formação Angular Alura

@@ -1,5 +1,6 @@
 1° Passo configurar o projeto no VSCode
-- npm install -g @angular/cli
+
+- npm install -g @angular/cli (ferramenta de linha de comando para criar projetos via linha de comando)
 - disponibiliza o comando ng
 - ng --version, para validar se o angular cli está instalado
 - ng help
@@ -9,13 +10,29 @@
 - ng serve ou ng server --o
 
 2° Configurando o Bootstrap
+
 - vá até o site oficial: https://getbootstrap.com/
 - clique em download
 - copie e cole no terminal: npm install bootstrap
 
 3° Criando componentes com o Angular
+
 - ng g c components/criar-produto (comonado para criar o componente criar produto)
 - ng g c components/listar-produto (comonado para criar o componente listar produto)
 
 4° Criando serviço com o Angular
+
 - ng g s services/produto (comonado para criar o serviço produto)
+
+Comentarios Importantes
+
+- ngModel = passando assim ele espera uma string
+- Event binding permite que um evento do DOM seja atribuído a um método do componente.
+- [ngModel] = Property binding permite que um valor de uma variável seja atribuído ao elemento HTML.
+- [(ngModel)] = Two-way data binding garante uma comunicação bidirecional entre o componente e o DOM.
+- alt + shift + seta para baixo ele duplica a linha
+- Angular que é o data binding. Com ele é possível realizar a comunicação de um componente com o DOM da aplicação, tê-lo como aliado facilitará muito a vida de uma pessoa que desenvolve com o Angular.
+
+- criando um Servidor Web para criação de uma API para teste
+  - npm install -g json-server
+  - json-server --watch db.json
