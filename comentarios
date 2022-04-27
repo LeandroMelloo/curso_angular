@@ -36,3 +36,63 @@ Comentarios Importantes
 - criando um Servidor Web para criação de uma API para teste
   - npm install -g json-server
   - json-server --watch db.json
+
+#####################################################################################################################################
+Projeto nbabook
+#####################################################################################################################################
+
+- ng new nbabook --strict
+
+Usaremos também o formatador de código Prettier. Para utilizá-lo com as regras do typescript de maneira harmoniosa, siga os seguintes passos:
+
+1. Instale no nosso projeto utilizando o comando:
+
+- npm install --save-dev prettier
+
+2. Instale os seguintes pacotes de desenvolvimento:
+
+- npm install --save-dev tslint-config-prettier
+- npm install --save-dev tslint-plugin-prettier
+
+3. No arquivo tslint.json, coloque a seguinte configuração no atributo extends:
+
+- "extends": ["tslint:recommended", "tslint-plugin-prettier", "tslint-config-prettier"]
+
+4. No Vs Code, utilize o comando Ctrl+Shift+P (ou Cmd+Shift+P caso esteja usando Mac OS), selecione a opção “Format Document” e, em seguida, selecione Prettier como formarter.
+
+5. Instalar o Bootstrap
+
+- npm i bootstrap font-awesome
+
+6. Inserir no arquivo angular.json as seguintes linhas para configurar o css do bootstrap e font-awesome
+
+- "styles": [
+  "src/styles.css",
+  "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "./node_modules/font-awesome/css/font-awesome.css"
+  ],
+
+7. criar o modulo home
+
+- ng g m home --routing -d
+
+O que significa module: Um módulo é a principal forma de organizar o código em uma aplicação Angular, é uma ferramenta bem flexível e permite que você organize seu código do jeito que você e a sua equipe quiser.
+
+A comunidade Angular classificou tipos de módulos. Essa é mais uma coisa da comunidade, mas é uma convenção e um dos principais tipos de módulo é o que acabamos de criar, que chamamos de feature module, ou seja, modo de funcionalidade.
+
+8. criar componente
+
+- ng g c home
+- ng g c home/login
+
+9. instalando o material
+
+- ng add @angular/material
+
+10. criar o modulo autenticacao
+
+- ng g m autenticacao
+
+11. criar o serviço de autenticação
+
+- ng g s autenticacao
