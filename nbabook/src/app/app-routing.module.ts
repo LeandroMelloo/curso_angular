@@ -7,6 +7,11 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then((m) => m.HomeModule), // técnica do lazy load
   },
+  {
+    path: 'basquete',
+    loadChildren: () =>
+      import('./basquete/basquete.module').then((m) => m.BasqueteModule), // técnica do lazy load
+  },
 ];
 
 @NgModule({
